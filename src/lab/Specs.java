@@ -17,6 +17,13 @@ package lab;
 public class Specs {
 
     // TODO ข้อ 4: เขียน JavaDoc ให้เมธอดนี้
+
+    /**
+     * 
+     * @param arr the arr can not be null
+     * @param key the key is the number that you want to find on arr
+     * @return If can't find that Index,then will return -1 
+     */
     public static int firstIndexOf(int[] arr, int key) {
         if (arr == null) throw new IllegalArgumentException("arr must not be null");
         for (int i = 0; i < arr.length; i++)
@@ -27,8 +34,8 @@ public class Specs {
     // TODO ข้อ 5: เขียน JavaDoc ให้เมธอดนี้
     /**
      * 
-     * @param radius
-     * @return
+     * @param radius the radius can not be less that 0 
+     * @return The area of Circle that had been already calculated
      */
     public static double circleArea(double radius) {
         if (radius < 0) throw new IllegalArgumentException("radius must be >= 0");
@@ -38,6 +45,11 @@ public class Specs {
     // TODO ข้อ 6: เขียน JavaDoc ให้เมธอดนี้
     //   (เมธอดนี้ตัดช่องว่างหน้า-หลัง แล้วแปลงเป็นตัวพิมพ์เล็ก;
     //    input null ให้คืน string ว่าง)
+    /**
+     * 
+     * @param s the s can not be null 
+     * @return the string will normalize to lowercase without space
+     */
     public static String normalize(String s) {
         if (s == null) return "";
         return s.trim().toLowerCase();
